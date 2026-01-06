@@ -1,0 +1,101 @@
+{
+  "verification_report": {
+    "version": "1.0",
+    "specification": "VCP v1.1",
+    "generated_at": "2026-01-06T05:55:32.143551+00:00",
+    "evidence_path": "poc_pack_v1_1",
+    "verifier": "VCP.FIX.Sidecar.Verifier.v1.1"
+  },
+  "summary": {
+    "overall_status": "PASS",
+    "vcp_v1_1_compliance": "FULLY_COMPLIANT",
+    "cryptographic_integrity": "VERIFIED",
+    "data_classification": "SYNTHETIC_DEMONSTRATION"
+  },
+  "metadata": {
+    "specification": "VCP v1.1",
+    "generator": "VCP.FIX.Sidecar.PoC.v1.1",
+    "conformance_tier": "SILVER",
+    "policy_id": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+    "protocol": "FIX 4.4",
+    "data_classification": "SYNTHETIC_DEMONSTRATION",
+    "data_origin": "Synthetic data generated for VCP v1.1 specification compliance demonstration"
+  },
+  "counts": {
+    "total_events": 27,
+    "total_batches": 1,
+    "total_anchors": 1,
+    "event_types": {
+      "INIT": 2,
+      "SIG": 5,
+      "ORD": 5,
+      "ACK": 4,
+      "EXE": 3,
+      "MOD": 2,
+      "REJ": 1,
+      "PRT": 1,
+      "CXL": 2,
+      "VCP_BATCH": 1,
+      "VCP_ANCHOR": 1
+    }
+  },
+  "layer1_event_integrity": {
+    "status": "PASS",
+    "event_hashes_verified": 27,
+    "event_hashes_failed": 0,
+    "hash_chain_present": true,
+    "hash_chain_verified": true
+  },
+  "layer2_collection_integrity": {
+    "status": "PASS",
+    "merkle_root": "a37e4204f962a7b65070807cdf9b8892a031831b0bef3ec7c51f7aa20c2ecb4e",
+    "merkle_construction": "RFC6962",
+    "tree_size": 25,
+    "inclusion_proofs_verified": 1
+  },
+  "layer3_external_verifiability": {
+    "status": "PASS",
+    "anchor_id": "anchor_20250106_001",
+    "anchor_target": "LOCAL_FILE",
+    "anchor_merkle_root_match": true
+  },
+  "v1_1_compliance_checks": {
+    "section_5_5_policy_identification": {
+      "status": "PASS",
+      "global_policy_present": true,
+      "events_with_policy": 27,
+      "events_without_policy": 0,
+      "policy_id": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+      "conformance_tier": "SILVER",
+      "issuer": "VeritasChain PoC Issuer",
+      "verification_depth": {
+        "HashChainValidation": true,
+        "MerkleProofRequired": true,
+        "ExternalAnchorRequired": true
+      }
+    },
+    "section_6_three_layer_architecture": {
+      "status": "PASS",
+      "layer1_event_hash": true,
+      "layer1_prev_hash": true,
+      "layer2_merkle_tree": true,
+      "layer3_external_anchor": true
+    },
+    "section_2_1_external_anchor_required": {
+      "status": "PASS",
+      "anchor_present": true,
+      "anchor_frequency": "24h"
+    }
+  },
+  "timeline_verification": {
+    "status": "PASS",
+    "start_time": "2025-01-06T08:00:00.000000Z",
+    "end_time": "2025-01-06T18:30:02.000000Z",
+    "monotonic": true
+  },
+  "certificate_verification": {
+    "status": "PASS",
+    "certificates_checked": 4,
+    "certificates_valid": 4
+  }
+}

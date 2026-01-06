@@ -1,0 +1,72 @@
+{
+  "certificate_type": "VCP_EVENT_CERTIFICATE",
+  "certificate_version": "1.1",
+  "specification": "VCP v1.1",
+  "certificate_id": "cert_019b91a8-9d69-77b6-0a09-61b71e4af7ba",
+  "issued_at": "2026-01-06T04:55:05.323000+00:00",
+  "event_summary": {
+    "event_id": "019b91a8-9d69-77b6-0a09-61b71e4af7ba",
+    "event_type": "EXE",
+    "timestamp_iso": "2025-01-06T08:15:23.789Z",
+    "timestamp_int": 1736151323789000,
+    "event_hash": "9b1369bd7c1445243b9ebfb55404bd6a3257d5d3345bc64035307909faaaf0ab",
+    "description": "FIX ExecutionReport - Full fill"
+  },
+  "trade_details": {
+    "Symbol": "XXXYYY",
+    "OrderID": "BRK-001",
+    "Side": "BUY",
+    "Volume": 10000.0,
+    "Price": 150.127,
+    "Commission": 0.5,
+    "ClOrdID": "ORD-001",
+    "ExecID": "EXE-002"
+  },
+  "chain_position": {
+    "sequence_number": 4,
+    "previous_hash": "405989f7abed243c6f40a33de2cbc08b7eb9dbdc33762428c3d8b87594c12e7d",
+    "hash_algorithm": "SHA256",
+    "chain_status": "OPTIONAL (included for enhanced integrity)"
+  },
+  "merkle_proof": {
+    "batch_id": "batch_20250106_001",
+    "merkle_root": "a37e4204f962a7b65070807cdf9b8892a031831b0bef3ec7c51f7aa20c2ecb4e",
+    "leaf_index": 4,
+    "tree_size": 25,
+    "merkle_construction": "RFC6962",
+    "inclusion_verified": true
+  },
+  "verification": {
+    "layer1_event_hash_valid": true,
+    "layer1_chain_continuity_valid": true,
+    "layer2_merkle_inclusion_valid": true,
+    "layer3_external_anchor_present": true,
+    "overall_status": "CRYPTOGRAPHICALLY_VERIFIED"
+  },
+  "policy_identification": {
+    "Version": "1.1",
+    "PolicyID": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+    "ConformanceTier": "SILVER",
+    "RegistrationPolicy": {
+      "Issuer": "VeritasChain PoC Issuer",
+      "PolicyURI": "https://veritaschain.org/policies/fix-sidecar-poc-v1",
+      "EffectiveDate": 1736150400000000
+    },
+    "VerificationDepth": {
+      "HashChainValidation": true,
+      "MerkleProofRequired": true,
+      "ExternalAnchorRequired": true
+    }
+  },
+  "compliance": {
+    "vcp_specification": "v1.1",
+    "conformance_tier": "SILVER",
+    "policy_id": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+    "v1_1_requirements_met": [
+      "PolicyIdentification (Section 5.5)",
+      "Three-Layer Architecture (Section 6)",
+      "External Anchor REQUIRED (Section 2.1)",
+      "Merkle Tree RFC 6962 (Section 6.2)"
+    ]
+  }
+}

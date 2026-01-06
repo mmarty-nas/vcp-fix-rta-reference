@@ -1,0 +1,105 @@
+{
+  "manifest_version": "1.1",
+  "specification": "VCP v1.1",
+  "data_classification": "SYNTHETIC_DEMONSTRATION",
+  "generated_at": "2026-01-06T05:55:56.895555+00:00",
+  "hash_algorithm": "SHA-256",
+  "file_count": 21,
+  "files": {
+    "events.json": {
+      "sha256": "c88efb63f374cecd09905e697c2e56d8a8ddcedf88b607b892c8574c6050f273",
+      "size_bytes": 40305
+    },
+    "events.jsonl": {
+      "sha256": "eceefb65ad79f7bcd707fe47a19a84d9c807b8d13ce42e853f1314aa6e98bdc4",
+      "size_bytes": 28011
+    },
+    "batches.json": {
+      "sha256": "980919060ead9ab48a23b3bc846cb3abb2b73ee1c87cb97029ad216a571d186e",
+      "size_bytes": 3950
+    },
+    "anchors.json": {
+      "sha256": "b6514b2076142b02f06c8abffcec7d32e89a6d65673377703ac0c8cb33ecd81c",
+      "size_bytes": 1237
+    },
+    "fix_messages.jsonl": {
+      "sha256": "6e117a21087df57300c0b4668efa2a3a6039606d377df9e3390e70184ff8c818",
+      "size_bytes": 11718
+    },
+    "keys/signer_ed25519_pub.pem": {
+      "sha256": "c38bd1e7d6607bf7785929b0cdf8e2d20d33583e8a8f6cde37b9b6f412583978",
+      "size_bytes": 113
+    },
+    "keys/signer_ed25519_pub.jwk": {
+      "sha256": "ab269c7adb552fe834ad030fc1cdcae6819347e0df5c5d7d2eae40ce1433a549",
+      "size_bytes": 157
+    },
+    "keys/key_manifest.json": {
+      "sha256": "cd071575abe60bbf48260603f20155c66c8ed6fc938647778947129346fee26d",
+      "size_bytes": 1432
+    },
+    "datasets/metadata.json": {
+      "sha256": "02c1f9a154409497b6f004001be3d0d2e42fda53ff9540042efed4a610a69bf5",
+      "size_bytes": 2260
+    },
+    "certificates/event_certificate_ORD_001.json": {
+      "sha256": "c82dbcd867dca6d98fae5e73db69cfbb8eb3847772c160c95fa736469342d76d",
+      "size_bytes": 1995
+    },
+    "certificates/event_certificate_ACK_001.json": {
+      "sha256": "5f633046757d4dcda7e8bd14987e3d246646b44663ba9153b88b578f638ce19a",
+      "size_bytes": 2008
+    },
+    "certificates/event_certificate_EXE_001.json": {
+      "sha256": "8e97227b6b0a03e55fca02538cdb2cdad493d932feaf21213ebcf75378bac411",
+      "size_bytes": 2367
+    },
+    "certificates/event_certificate_REJ_001.json": {
+      "sha256": "9e042f5f7fdee80c5781d18302ad95f98597eb57e6228793732d7575f78b788e",
+      "size_bytes": 2015
+    },
+    "verifier_outputs/verification_report.json": {
+      "sha256": "d4a58f3a817bfc41cc6ffded229491de5a55ea39f5403cd8a7a7ca6b99003447",
+      "size_bytes": 2850
+    },
+    "verifier_outputs/verification_report.txt": {
+      "sha256": "be2538f5bf0a07543b187bc2a5e8d43393d7f85a18b9432e60aa714e61204123",
+      "size_bytes": 2721
+    },
+    "examples/verify_expected.txt": {
+      "sha256": "6e7470079646d33d734b8776ee6057606aa16693fdaae825982297d70195a7f4",
+      "size_bytes": 2721
+    },
+    "mapping.md": {
+      "sha256": "68ace667f7310f4ee357bc87dc9f69e8fdf557c4351f1947ddcacdbc7e04b8dc",
+      "size_bytes": 11653
+    },
+    "README.md": {
+      "sha256": "5309b2ce54743003d9fab32f786a2e689f617244550e55517e465ac3f37f0049",
+      "size_bytes": 8686
+    },
+    "CHANGELOG.md": {
+      "sha256": "b06b4778b53d3674340c4e3b06b8360dde8a760a953a6d4f95865235f8811f5c",
+      "size_bytes": 1974
+    },
+    "LICENSE": {
+      "sha256": "50e23269520660a02b605f918d70e129d2d983ecb05f65063a2aaab4c16dd84b",
+      "size_bytes": 2224
+    },
+    "verify.py": {
+      "sha256": "434dcfcb35eea7c07f5d4a0527fd4018c338a31359f56dec7f856e931396361d",
+      "size_bytes": 15940
+    }
+  },
+  "cryptographic_summary": {
+    "merkle_root": "a37e4204f962a7b65070807cdf9b8892a031831b0bef3ec7c51f7aa20c2ecb4e",
+    "merkle_construction": "RFC 6962",
+    "event_hashes": "SHA-256 from canonical JSON (RFC 8785)",
+    "hash_chain": "PrevHash links (OPTIONAL in v1.1, included)",
+    "signature_algorithm": "ED25519 (demo key in keys/ directory)"
+  },
+  "excluded_from_manifest": [
+    "hash_manifest.json (this file)"
+  ],
+  "verification_note": "All hashes are independently recomputable. Run verify.py for full validation."
+}

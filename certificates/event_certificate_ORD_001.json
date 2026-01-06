@@ -1,0 +1,62 @@
+{
+  "certificate_type": "VCP_EVENT_CERTIFICATE",
+  "certificate_version": "1.1",
+  "specification": "VCP v1.1",
+  "certificate_id": "cert_019b91a8-9d69-7298-2535-8eb671884052",
+  "issued_at": "2026-01-06T05:13:11.632971+00:00",
+  "event_summary": {
+    "event_id": "019b91a8-9d69-7298-2535-8eb671884052",
+    "event_type": "ORD",
+    "timestamp_iso": "2025-01-06T08:15:23.456Z",
+    "timestamp_int": 1736151323456000,
+    "event_hash": "db1d048fc8afcb22c9ac544cca24e5dc2cf9800395a415401117ab9c84d21c2a",
+    "description": "FIX NewOrderSingle"
+  },
+  "trade_details": {
+    "Symbol": "XXXYYY",
+    "Side": "BUY",
+    "Volume": 10000.0,
+    "Price": 150.125,
+    "ClOrdID": "ORD-001"
+  },
+  "chain_position": {
+    "sequence_number": 2,
+    "previous_hash": "31a087454419cb08e29c7de89ed12f616fd87aab94b3ccc2af00e4a052837d29",
+    "hash_algorithm": "SHA256"
+  },
+  "merkle_proof": {
+    "batch_id": "batch_20250106_001",
+    "merkle_root": "a37e4204f962a7b65070807cdf9b8892a031831b0bef3ec7c51f7aa20c2ecb4e",
+    "leaf_index": 2,
+    "tree_size": 25,
+    "merkle_construction": "RFC6962",
+    "inclusion_verified": true
+  },
+  "verification": {
+    "layer1_event_hash_valid": true,
+    "layer1_chain_continuity_valid": true,
+    "layer2_merkle_inclusion_valid": true,
+    "layer3_external_anchor_present": true,
+    "overall_status": "CRYPTOGRAPHICALLY_VERIFIED"
+  },
+  "policy_identification": {
+    "Version": "1.1",
+    "PolicyID": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+    "ConformanceTier": "SILVER",
+    "RegistrationPolicy": {
+      "Issuer": "VeritasChain PoC Issuer",
+      "PolicyURI": "https://veritaschain.org/policies/fix-sidecar-poc-v1",
+      "EffectiveDate": 1736150400000000
+    },
+    "VerificationDepth": {
+      "HashChainValidation": true,
+      "MerkleProofRequired": true,
+      "ExternalAnchorRequired": true
+    }
+  },
+  "compliance": {
+    "vcp_specification": "v1.1",
+    "conformance_tier": "SILVER",
+    "policy_id": "org.veritaschain:vcp-fix-sidecar-poc-v1"
+  }
+}

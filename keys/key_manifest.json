@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "key_id": "vcp-poc-signer-001",
+  "algorithm": "Ed25519",
+  "curve": "Ed25519",
+  "key_size_bits": 256,
+  "purpose": "VCP Event Signing",
+  "usage": [
+    "sign",
+    "verify"
+  ],
+  "files": {
+    "pem": "signer_ed25519_pub.pem",
+    "jwk": "signer_ed25519_pub.jwk"
+  },
+  "fingerprints": {
+    "public_key_sha256": "139e3940e64b5491722088d9a0d741628fc826e09475d341a780acde3c4b8070",
+    "public_key_sha256_short": "139e3940e64b5491",
+    "pem_file_sha256": "c38bd1e7d6607bf7785929b0cdf8e2d20d33583e8a8f6cde37b9b6f412583978",
+    "jwk_kid": "vcp-poc-signer-001"
+  },
+  "status": "DEMO_KEY",
+  "classification": "PUBLIC_KEY_ONLY",
+  "lifecycle": {
+    "created_at": "2025-01-06T00:00:00Z",
+    "expires_at": null,
+    "rotation_policy": "NOT_APPLICABLE_FOR_POC",
+    "revocation_status": "NOT_REVOKED"
+  },
+  "warnings": [
+    "This is a DEMONSTRATION public key for PoC purposes only.",
+    "This key MUST NOT be used in production environments.",
+    "Production deployments MUST use HSM-generated keys with proper key ceremony.",
+    "Key rotation and revocation procedures are out of scope for this PoC."
+  ],
+  "production_requirements": {
+    "key_generation": "HSM (FIPS 140-2 Level 3 or higher)",
+    "key_storage": "Hardware Security Module",
+    "key_ceremony": "Multi-party with witnesses",
+    "rotation_interval": "Annual or on compromise",
+    "revocation_mechanism": "CRL or OCSP"
+  }
+}

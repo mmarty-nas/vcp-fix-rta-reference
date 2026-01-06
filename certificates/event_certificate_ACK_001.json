@@ -1,0 +1,62 @@
+{
+  "certificate_type": "VCP_EVENT_CERTIFICATE",
+  "certificate_version": "1.1",
+  "specification": "VCP v1.1",
+  "certificate_id": "cert_019b91a8-9d69-7295-4138-d2af4ad835aa",
+  "issued_at": "2026-01-06T05:13:11.633452+00:00",
+  "event_summary": {
+    "event_id": "019b91a8-9d69-7295-4138-d2af4ad835aa",
+    "event_type": "ACK",
+    "timestamp_iso": "2025-01-06T08:15:23.567Z",
+    "timestamp_int": 1736151323567000,
+    "event_hash": "405989f7abed243c6f40a33de2cbc08b7eb9dbdc33762428c3d8b87594c12e7d",
+    "description": "FIX ExecutionReport - New"
+  },
+  "trade_details": {
+    "Symbol": "XXXYYY",
+    "OrderID": "BRK-001",
+    "Side": "BUY",
+    "ClOrdID": "ORD-001",
+    "ExecID": "EXE-001"
+  },
+  "chain_position": {
+    "sequence_number": 3,
+    "previous_hash": "db1d048fc8afcb22c9ac544cca24e5dc2cf9800395a415401117ab9c84d21c2a",
+    "hash_algorithm": "SHA256"
+  },
+  "merkle_proof": {
+    "batch_id": "batch_20250106_001",
+    "merkle_root": "a37e4204f962a7b65070807cdf9b8892a031831b0bef3ec7c51f7aa20c2ecb4e",
+    "leaf_index": 3,
+    "tree_size": 25,
+    "merkle_construction": "RFC6962",
+    "inclusion_verified": true
+  },
+  "verification": {
+    "layer1_event_hash_valid": true,
+    "layer1_chain_continuity_valid": true,
+    "layer2_merkle_inclusion_valid": true,
+    "layer3_external_anchor_present": true,
+    "overall_status": "CRYPTOGRAPHICALLY_VERIFIED"
+  },
+  "policy_identification": {
+    "Version": "1.1",
+    "PolicyID": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+    "ConformanceTier": "SILVER",
+    "RegistrationPolicy": {
+      "Issuer": "VeritasChain PoC Issuer",
+      "PolicyURI": "https://veritaschain.org/policies/fix-sidecar-poc-v1",
+      "EffectiveDate": 1736150400000000
+    },
+    "VerificationDepth": {
+      "HashChainValidation": true,
+      "MerkleProofRequired": true,
+      "ExternalAnchorRequired": true
+    }
+  },
+  "compliance": {
+    "vcp_specification": "v1.1",
+    "conformance_tier": "SILVER",
+    "policy_id": "org.veritaschain:vcp-fix-sidecar-poc-v1"
+  }
+}

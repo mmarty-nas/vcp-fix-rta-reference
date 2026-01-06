@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "vcp_version": "1.1",
+  "profile": "FIX",
+  "profile_version": "4.4",
+  "conformance_tier": "SILVER",
+  "policy_id": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+  "issuer": "VeritasChain PoC Issuer",
+  "statistics": {
+    "event_count": 27,
+    "fix_message_count": 18,
+    "batch_count": 1,
+    "anchor_count": 1,
+    "certificate_count": 4
+  },
+  "cryptographic": {
+    "merkle_root": "a37e4204f962a7b65070807cdf9b8892a031831b0bef3ec7c51f7aa20c2ecb4e",
+    "merkle_construction": "RFC6962",
+    "hash_algorithm": "SHA-256",
+    "signature_algorithm": "ED25519",
+    "signer_key_id": "vcp-poc-signer-001"
+  },
+  "anchor_refs": [
+    {
+      "anchor_id": "anchor_20250106_001",
+      "anchor_target": "LOCAL_FILE",
+      "merkle_root": "a37e4204f962a7b65070807cdf9b8892a031831b0bef3ec7c51f7aa20c2ecb4e"
+    }
+  ],
+  "temporal": {
+    "trading_date": "2025-01-06",
+    "session_start": "2025-01-06T08:00:00.000000Z",
+    "session_end": "2025-01-06T18:30:02.000000Z",
+    "generated_at": "2026-01-06T05:12:48.892652+00:00",
+    "timezone": "UTC"
+  },
+  "file_integrity": {
+    "events.json": "c88efb63f374cecd09905e697c2e56d8a8ddcedf88b607b892c8574c6050f273",
+    "events.jsonl": "eceefb65ad79f7bcd707fe47a19a84d9c807b8d13ce42e853f1314aa6e98bdc4",
+    "fix_messages.jsonl": "6e117a21087df57300c0b4668efa2a3a6039606d377df9e3390e70184ff8c818",
+    "batches.json": "980919060ead9ab48a23b3bc846cb3abb2b73ee1c87cb97029ad216a571d186e",
+    "anchors.json": "b6514b2076142b02f06c8abffcec7d32e89a6d65673377703ac0c8cb33ecd81c"
+  },
+  "event_type_distribution": {
+    "INIT": 2,
+    "SIG": 5,
+    "ORD": 5,
+    "ACK": 4,
+    "EXE": 3,
+    "MOD": 2,
+    "REJ": 1,
+    "PRT": 1,
+    "CXL": 2,
+    "VCP_BATCH": 1,
+    "VCP_ANCHOR": 1
+  },
+  "data_classification": "SYNTHETIC_DEMONSTRATION",
+  "masking_applied": false,
+  "data_origin": "Synthetic data generated for VCP v1.1 specification compliance demonstration",
+  "synthetic_data": true,
+  "data_characteristics": {
+    "symbol": "Generic placeholder (XXXYYY)",
+    "prices": "Round numbers for test verification",
+    "volumes": "Round numbers for test verification",
+    "identifiers": "Sequential patterns (ORD-001, ORD-002, ...)",
+    "timestamps": "Realistic trading session times"
+  }
+}

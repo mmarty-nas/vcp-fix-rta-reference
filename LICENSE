@@ -1,0 +1,64 @@
+# License
+
+This VCP Evidence Pack contains multiple components with different licenses:
+
+## Evidence Pack Structure and Scripts
+
+**License**: Apache License 2.0
+
+```
+Copyright 2025 VeritasChain Standards Organization (VSO)
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
+
+**Applies to**:
+- `verify.py`
+- `mapping.md`
+- `README.md`
+- `CHANGELOG.md`
+- All JSON data files
+- All certificate files
+
+## VCP Specification
+
+**License**: Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+The VeritasChain Protocol (VCP) Specification is licensed under CC BY 4.0.
+
+You are free to:
+- **Share**: Copy and redistribute the material in any medium or format
+- **Adapt**: Remix, transform, and build upon the material for any purpose
+
+Under the following terms:
+- **Attribution**: You must give appropriate credit to VeritasChain Standards Organization (VSO)
+
+Full license text: https://creativecommons.org/licenses/by/4.0/
+
+## Third-Party References
+
+This evidence pack references:
+- FIX Protocol (FIX Trading Community) - Used under fair use for interoperability
+- RFC 6962, RFC 8785, RFC 9562 (IETF) - Public standards
+- Ed25519 (Daniel J. Bernstein) - Public domain
+
+## Disclaimer
+
+THIS EVIDENCE PACK IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+IN NO EVENT SHALL VERITASCHAIN STANDARDS ORGANIZATION BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THIS EVIDENCE PACK OR THE USE OR OTHER DEALINGS IN THIS EVIDENCE PACK.
+
+---
+
+*VeritasChain Standards Organization (VSO)*  
+*https://veritaschain.org*

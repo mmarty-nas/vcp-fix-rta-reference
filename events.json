@@ -1,0 +1,1171 @@
+{
+  "metadata": {
+    "specification": "VCP v1.1",
+    "specification_date": "2025-12-30",
+    "generator": "VCP.FIX.Sidecar.PoC.v1.1",
+    "generated_at": "2026-01-06T04:55:05.323000+00:00",
+    "conformance_tier": "SILVER",
+    "policy_id": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+    "issuer": "VeritasChain PoC Issuer",
+    "issuer_id": "ISSUER_001",
+    "protocol": "FIX 4.4",
+    "total_events": 27,
+    "hash_algorithm": "SHA-256",
+    "signature_algorithm": "ED25519",
+    "merkle_construction": "RFC6962",
+    "three_layer_architecture": {
+      "layer1_event_integrity": "EventHash (REQUIRED) + PrevHash (OPTIONAL, included)",
+      "layer2_collection_integrity": "Merkle Tree RFC 6962 (REQUIRED)",
+      "layer3_external_verifiability": "External Anchor (REQUIRED)"
+    },
+    "date_range": {
+      "start": "2025-01-06T08:00:00.000000Z",
+      "end": "2025-01-06T18:30:02.000000Z"
+    },
+    "data_classification": "SYNTHETIC_DEMONSTRATION",
+    "data_origin": "Synthetic data generated for VCP v1.1 specification compliance demonstration"
+  },
+  "policy_identification": {
+    "Version": "1.1",
+    "PolicyID": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+    "ConformanceTier": "SILVER",
+    "RegistrationPolicy": {
+      "Issuer": "VeritasChain PoC Issuer",
+      "PolicyURI": "https://veritaschain.org/policies/fix-sidecar-poc-v1",
+      "EffectiveDate": 1736150400000000
+    },
+    "VerificationDepth": {
+      "HashChainValidation": true,
+      "MerkleProofRequired": true,
+      "ExternalAnchorRequired": true
+    }
+  },
+  "events": [
+    {
+      "Header": {
+        "Version": "1.1",
+        "EventID": "019b91a8-9d69-7a90-6fa7-07fd3f4f967d",
+        "EventType": "INIT",
+        "TimestampISO": "2025-01-06T08:00:00.000Z",
+        "TimestampInt": 1736150400000000,
+        "HashAlgo": "SHA256",
+        "SignAlgo": "ED25519",
+        "ClockSyncStatus": "BEST_EFFORT",
+        "TimestampPrecision": "MILLISECOND",
+        "EventHash": "e91f62ce7484dcdb9364570650d0424bb2399773e11b41595c2dbb84c468a4ab"
+      },
+      "Governance": {
+        "AlgorithmName": "ALGO_001",
+        "AlgorithmVersion": "1.0.0",
+        "DecisionReason": "Trading session initialization"
+      },
+      "PolicyIdentification": {
+        "Version": "1.1",
+        "PolicyID": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+        "ConformanceTier": "SILVER",
+        "RegistrationPolicy": {
+          "Issuer": "VeritasChain PoC Issuer",
+          "PolicyURI": "https://veritaschain.org/policies/fix-sidecar-poc-v1",
+          "EffectiveDate": 1736150400000000
+        },
+        "VerificationDepth": {
+          "HashChainValidation": true,
+          "MerkleProofRequired": true,
+          "ExternalAnchorRequired": true
+        }
+      }
+    },
+    {
+      "Header": {
+        "Version": "1.1",
+        "EventID": "019b91a8-9d69-7695-3631-510f4650dd17",
+        "EventType": "SIG",
+        "TimestampISO": "2025-01-06T08:15:20.100Z",
+        "TimestampInt": 1736151320100000,
+        "HashAlgo": "SHA256",
+        "SignAlgo": "ED25519",
+        "ClockSyncStatus": "BEST_EFFORT",
+        "TimestampPrecision": "MILLISECOND",
+        "PrevHash": "e91f62ce7484dcdb9364570650d0424bb2399773e11b41595c2dbb84c468a4ab",
+        "EventHash": "31a087454419cb08e29c7de89ed12f616fd87aab94b3ccc2af00e4a052837d29"
+      },
+      "Trade": {
+        "Symbol": "XXXYYY",
+        "Side": "BUY",
+        "Price": 150.123
+      },
+      "Governance": {
+        "AlgorithmName": "ALGO_001",
+        "AlgorithmVersion": "1.0.0",
+        "Confidence": 0.82,
+        "DecisionReason": "Technical signal detected"
+      },
+      "PolicyIdentification": {
+        "Version": "1.1",
+        "PolicyID": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+        "ConformanceTier": "SILVER",
+        "RegistrationPolicy": {
+          "Issuer": "VeritasChain PoC Issuer",
+          "PolicyURI": "https://veritaschain.org/policies/fix-sidecar-poc-v1",
+          "EffectiveDate": 1736150400000000
+        },
+        "VerificationDepth": {
+          "HashChainValidation": true,
+          "MerkleProofRequired": true,
+          "ExternalAnchorRequired": true
+        }
+      }
+    },
+    {
+      "Header": {
+        "Version": "1.1",
+        "EventID": "019b91a8-9d69-7298-2535-8eb671884052",
+        "EventType": "ORD",
+        "TimestampISO": "2025-01-06T08:15:23.456Z",
+        "TimestampInt": 1736151323456000,
+        "HashAlgo": "SHA256",
+        "SignAlgo": "ED25519",
+        "ClockSyncStatus": "BEST_EFFORT",
+        "TimestampPrecision": "MILLISECOND",
+        "PrevHash": "31a087454419cb08e29c7de89ed12f616fd87aab94b3ccc2af00e4a052837d29",
+        "EventHash": "db1d048fc8afcb22c9ac544cca24e5dc2cf9800395a415401117ab9c84d21c2a"
+      },
+      "Trade": {
+        "Symbol": "XXXYYY",
+        "Side": "BUY",
+        "Volume": 10000.0,
+        "Price": 150.125,
+        "ClOrdID": "ORD-001"
+      },
+      "Governance": {
+        "AlgorithmName": "ALGO_001",
+        "AlgorithmVersion": "1.0.0",
+        "DecisionReason": "Order submitted via FIX"
+      },
+      "PolicyIdentification": {
+        "Version": "1.1",
+        "PolicyID": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+        "ConformanceTier": "SILVER",
+        "RegistrationPolicy": {
+          "Issuer": "VeritasChain PoC Issuer",
+          "PolicyURI": "https://veritaschain.org/policies/fix-sidecar-poc-v1",
+          "EffectiveDate": 1736150400000000
+        },
+        "VerificationDepth": {
+          "HashChainValidation": true,
+          "MerkleProofRequired": true,
+          "ExternalAnchorRequired": true
+        }
+      }
+    },
+    {
+      "Header": {
+        "Version": "1.1",
+        "EventID": "019b91a8-9d69-7295-4138-d2af4ad835aa",
+        "EventType": "ACK",
+        "TimestampISO": "2025-01-06T08:15:23.567Z",
+        "TimestampInt": 1736151323567000,
+        "HashAlgo": "SHA256",
+        "SignAlgo": "ED25519",
+        "ClockSyncStatus": "BEST_EFFORT",
+        "TimestampPrecision": "MILLISECOND",
+        "PrevHash": "db1d048fc8afcb22c9ac544cca24e5dc2cf9800395a415401117ab9c84d21c2a",
+        "EventHash": "405989f7abed243c6f40a33de2cbc08b7eb9dbdc33762428c3d8b87594c12e7d"
+      },
+      "Trade": {
+        "Symbol": "XXXYYY",
+        "OrderID": "BRK-001",
+        "Side": "BUY",
+        "ClOrdID": "ORD-001",
+        "ExecID": "EXE-001"
+      },
+      "Governance": {
+        "AlgorithmName": "ALGO_001",
+        "AlgorithmVersion": "1.0.0",
+        "DecisionReason": "Order acknowledged by venue"
+      },
+      "PolicyIdentification": {
+        "Version": "1.1",
+        "PolicyID": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+        "ConformanceTier": "SILVER",
+        "RegistrationPolicy": {
+          "Issuer": "VeritasChain PoC Issuer",
+          "PolicyURI": "https://veritaschain.org/policies/fix-sidecar-poc-v1",
+          "EffectiveDate": 1736150400000000
+        },
+        "VerificationDepth": {
+          "HashChainValidation": true,
+          "MerkleProofRequired": true,
+          "ExternalAnchorRequired": true
+        }
+      }
+    },
+    {
+      "Header": {
+        "Version": "1.1",
+        "EventID": "019b91a8-9d69-77b6-0a09-61b71e4af7ba",
+        "EventType": "EXE",
+        "TimestampISO": "2025-01-06T08:15:23.789Z",
+        "TimestampInt": 1736151323789000,
+        "HashAlgo": "SHA256",
+        "SignAlgo": "ED25519",
+        "ClockSyncStatus": "BEST_EFFORT",
+        "TimestampPrecision": "MILLISECOND",
+        "PrevHash": "405989f7abed243c6f40a33de2cbc08b7eb9dbdc33762428c3d8b87594c12e7d",
+        "EventHash": "9b1369bd7c1445243b9ebfb55404bd6a3257d5d3345bc64035307909faaaf0ab"
+      },
+      "Trade": {
+        "Symbol": "XXXYYY",
+        "OrderID": "BRK-001",
+        "Side": "BUY",
+        "Volume": 10000.0,
+        "Price": 150.127,
+        "Commission": 0.5,
+        "ClOrdID": "ORD-001",
+        "ExecID": "EXE-002"
+      },
+      "Governance": {
+        "AlgorithmName": "ALGO_001",
+        "AlgorithmVersion": "1.0.0",
+        "DecisionReason": "Order fully executed"
+      },
+      "PolicyIdentification": {
+        "Version": "1.1",
+        "PolicyID": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+        "ConformanceTier": "SILVER",
+        "RegistrationPolicy": {
+          "Issuer": "VeritasChain PoC Issuer",
+          "PolicyURI": "https://veritaschain.org/policies/fix-sidecar-poc-v1",
+          "EffectiveDate": 1736150400000000
+        },
+        "VerificationDepth": {
+          "HashChainValidation": true,
+          "MerkleProofRequired": true,
+          "ExternalAnchorRequired": true
+        }
+      }
+    },
+    {
+      "Header": {
+        "Version": "1.1",
+        "EventID": "019b91a8-9d69-799d-d7b4-ae1312db15c9",
+        "EventType": "SIG",
+        "TimestampISO": "2025-01-06T10:30:40.000Z",
+        "TimestampInt": 1736159440000000,
+        "HashAlgo": "SHA256",
+        "SignAlgo": "ED25519",
+        "ClockSyncStatus": "BEST_EFFORT",
+        "TimestampPrecision": "MILLISECOND",
+        "PrevHash": "9b1369bd7c1445243b9ebfb55404bd6a3257d5d3345bc64035307909faaaf0ab",
+        "EventHash": "84ec763069e81a1be093220c7a965f28840a55683b8461ad0219c56c6a4b2669"
+      },
+      "Trade": {
+        "Symbol": "XXXYYY",
+        "Side": "SELL",
+        "Price": 150.45
+      },
+      "Governance": {
+        "AlgorithmName": "ALGO_001",
+        "AlgorithmVersion": "1.0.0",
+        "Confidence": 0.78,
+        "DecisionReason": "Take profit signal"
+      },
+      "PolicyIdentification": {
+        "Version": "1.1",
+        "PolicyID": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+        "ConformanceTier": "SILVER",
+        "RegistrationPolicy": {
+          "Issuer": "VeritasChain PoC Issuer",
+          "PolicyURI": "https://veritaschain.org/policies/fix-sidecar-poc-v1",
+          "EffectiveDate": 1736150400000000
+        },
+        "VerificationDepth": {
+          "HashChainValidation": true,
+          "MerkleProofRequired": true,
+          "ExternalAnchorRequired": true
+        }
+      }
+    },
+    {
+      "Header": {
+        "Version": "1.1",
+        "EventID": "019b91a8-9d69-7d99-f21c-8e6c500ec8dc",
+        "EventType": "ORD",
+        "TimestampISO": "2025-01-06T10:30:45.123Z",
+        "TimestampInt": 1736159445123000,
+        "HashAlgo": "SHA256",
+        "SignAlgo": "ED25519",
+        "ClockSyncStatus": "BEST_EFFORT",
+        "TimestampPrecision": "MILLISECOND",
+        "PrevHash": "84ec763069e81a1be093220c7a965f28840a55683b8461ad0219c56c6a4b2669",
+        "EventHash": "7dae974068cd629be76ae0ea0533547d9a92de2edea554a7fbfadc2558ddc3ea"
+      },
+      "Trade": {
+        "Symbol": "XXXYYY",
+        "Side": "SELL",
+        "Volume": 20000.0,
+        "Price": 150.456,
+        "ClOrdID": "ORD-002"
+      },
+      "Governance": {
+        "AlgorithmName": "ALGO_001",
+        "AlgorithmVersion": "1.0.0",
+        "DecisionReason": "Order submitted via FIX"
+      },
+      "PolicyIdentification": {
+        "Version": "1.1",
+        "PolicyID": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+        "ConformanceTier": "SILVER",
+        "RegistrationPolicy": {
+          "Issuer": "VeritasChain PoC Issuer",
+          "PolicyURI": "https://veritaschain.org/policies/fix-sidecar-poc-v1",
+          "EffectiveDate": 1736150400000000
+        },
+        "VerificationDepth": {
+          "HashChainValidation": true,
+          "MerkleProofRequired": true,
+          "ExternalAnchorRequired": true
+        }
+      }
+    },
+    {
+      "Header": {
+        "Version": "1.1",
+        "EventID": "019b91a8-9d69-7aa4-61a7-6beb883d6a43",
+        "EventType": "ACK",
+        "TimestampISO": "2025-01-06T10:30:45.234Z",
+        "TimestampInt": 1736159445234000,
+        "HashAlgo": "SHA256",
+        "SignAlgo": "ED25519",
+        "ClockSyncStatus": "BEST_EFFORT",
+        "TimestampPrecision": "MILLISECOND",
+        "PrevHash": "7dae974068cd629be76ae0ea0533547d9a92de2edea554a7fbfadc2558ddc3ea",
+        "EventHash": "4a583788f0cba527cd31cdf83c87e01db670e7b98f4ae49a12c2de02e85668a0"
+      },
+      "Trade": {
+        "Symbol": "XXXYYY",
+        "OrderID": "BRK-002",
+        "Side": "SELL",
+        "ClOrdID": "ORD-002",
+        "ExecID": "EXE-003"
+      },
+      "Governance": {
+        "AlgorithmName": "ALGO_001",
+        "AlgorithmVersion": "1.0.0",
+        "DecisionReason": "Order acknowledged by venue"
+      },
+      "PolicyIdentification": {
+        "Version": "1.1",
+        "PolicyID": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+        "ConformanceTier": "SILVER",
+        "RegistrationPolicy": {
+          "Issuer": "VeritasChain PoC Issuer",
+          "PolicyURI": "https://veritaschain.org/policies/fix-sidecar-poc-v1",
+          "EffectiveDate": 1736150400000000
+        },
+        "VerificationDepth": {
+          "HashChainValidation": true,
+          "MerkleProofRequired": true,
+          "ExternalAnchorRequired": true
+        }
+      }
+    },
+    {
+      "Header": {
+        "Version": "1.1",
+        "EventID": "019b91a8-9d69-7d8a-c522-aabe50d0bb00",
+        "EventType": "EXE",
+        "TimestampISO": "2025-01-06T10:30:45.456Z",
+        "TimestampInt": 1736159445456000,
+        "HashAlgo": "SHA256",
+        "SignAlgo": "ED25519",
+        "ClockSyncStatus": "BEST_EFFORT",
+        "TimestampPrecision": "MILLISECOND",
+        "PrevHash": "4a583788f0cba527cd31cdf83c87e01db670e7b98f4ae49a12c2de02e85668a0",
+        "EventHash": "263f93ac25034446b8dbcebf0f1af3a8455cf75c3dc851f1bf9432472f104f42"
+      },
+      "Trade": {
+        "Symbol": "XXXYYY",
+        "OrderID": "BRK-002",
+        "Side": "SELL",
+        "Volume": 20000.0,
+        "Price": 150.452,
+        "Commission": 1.0,
+        "ClOrdID": "ORD-002",
+        "ExecID": "EXE-004"
+      },
+      "Governance": {
+        "AlgorithmName": "ALGO_001",
+        "AlgorithmVersion": "1.0.0",
+        "DecisionReason": "Order fully executed"
+      },
+      "PolicyIdentification": {
+        "Version": "1.1",
+        "PolicyID": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+        "ConformanceTier": "SILVER",
+        "RegistrationPolicy": {
+          "Issuer": "VeritasChain PoC Issuer",
+          "PolicyURI": "https://veritaschain.org/policies/fix-sidecar-poc-v1",
+          "EffectiveDate": 1736150400000000
+        },
+        "VerificationDepth": {
+          "HashChainValidation": true,
+          "MerkleProofRequired": true,
+          "ExternalAnchorRequired": true
+        }
+      }
+    },
+    {
+      "Header": {
+        "Version": "1.1",
+        "EventID": "019b91a8-9d69-74b9-b822-e371a6781ace",
+        "EventType": "SIG",
+        "TimestampISO": "2025-01-06T14:22:00.000Z",
+        "TimestampInt": 1736173320000000,
+        "HashAlgo": "SHA256",
+        "SignAlgo": "ED25519",
+        "ClockSyncStatus": "BEST_EFFORT",
+        "TimestampPrecision": "MILLISECOND",
+        "PrevHash": "263f93ac25034446b8dbcebf0f1af3a8455cf75c3dc851f1bf9432472f104f42",
+        "EventHash": "cdec585f31f36f6d49b1bf32e11e0df2535a680feb864435f6ed0c381e3af5bd"
+      },
+      "Trade": {
+        "Symbol": "XXXYYY",
+        "Side": "BUY",
+        "Price": 149.88
+      },
+      "Governance": {
+        "AlgorithmName": "ALGO_001",
+        "AlgorithmVersion": "1.0.0",
+        "Confidence": 0.85,
+        "DecisionReason": "Momentum signal detected"
+      },
+      "PolicyIdentification": {
+        "Version": "1.1",
+        "PolicyID": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+        "ConformanceTier": "SILVER",
+        "RegistrationPolicy": {
+          "Issuer": "VeritasChain PoC Issuer",
+          "PolicyURI": "https://veritaschain.org/policies/fix-sidecar-poc-v1",
+          "EffectiveDate": 1736150400000000
+        },
+        "VerificationDepth": {
+          "HashChainValidation": true,
+          "MerkleProofRequired": true,
+          "ExternalAnchorRequired": true
+        }
+      }
+    },
+    {
+      "Header": {
+        "Version": "1.1",
+        "EventID": "019b91a8-9d69-7ca8-72a5-f1c5e08f82ae",
+        "EventType": "ORD",
+        "TimestampISO": "2025-01-06T14:22:11.345Z",
+        "TimestampInt": 1736173331345000,
+        "HashAlgo": "SHA256",
+        "SignAlgo": "ED25519",
+        "ClockSyncStatus": "BEST_EFFORT",
+        "TimestampPrecision": "MILLISECOND",
+        "PrevHash": "cdec585f31f36f6d49b1bf32e11e0df2535a680feb864435f6ed0c381e3af5bd",
+        "EventHash": "129b4538d55e462900df7afa0f89f2e95ad7a9a399ade40c0c01dd5b8a886ac3"
+      },
+      "Trade": {
+        "Symbol": "XXXYYY",
+        "Side": "BUY",
+        "Volume": 15000.0,
+        "Price": 149.89,
+        "ClOrdID": "ORD-003"
+      },
+      "Governance": {
+        "AlgorithmName": "ALGO_001",
+        "AlgorithmVersion": "1.0.0",
+        "DecisionReason": "Order submitted via FIX"
+      },
+      "PolicyIdentification": {
+        "Version": "1.1",
+        "PolicyID": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+        "ConformanceTier": "SILVER",
+        "RegistrationPolicy": {
+          "Issuer": "VeritasChain PoC Issuer",
+          "PolicyURI": "https://veritaschain.org/policies/fix-sidecar-poc-v1",
+          "EffectiveDate": 1736150400000000
+        },
+        "VerificationDepth": {
+          "HashChainValidation": true,
+          "MerkleProofRequired": true,
+          "ExternalAnchorRequired": true
+        }
+      }
+    },
+    {
+      "Header": {
+        "Version": "1.1",
+        "EventID": "019b91a8-9d69-7e92-fddf-b25f27c19352",
+        "EventType": "ACK",
+        "TimestampISO": "2025-01-06T14:22:11.456Z",
+        "TimestampInt": 1736173331456000,
+        "HashAlgo": "SHA256",
+        "SignAlgo": "ED25519",
+        "ClockSyncStatus": "BEST_EFFORT",
+        "TimestampPrecision": "MILLISECOND",
+        "PrevHash": "129b4538d55e462900df7afa0f89f2e95ad7a9a399ade40c0c01dd5b8a886ac3",
+        "EventHash": "1e461acf8588a2084bea8a078d2b5bc8ec35f6351ca758fb9fb21c5417a93536"
+      },
+      "Trade": {
+        "Symbol": "XXXYYY",
+        "OrderID": "BRK-003",
+        "Side": "BUY",
+        "ClOrdID": "ORD-003",
+        "ExecID": "EXE-005"
+      },
+      "Governance": {
+        "AlgorithmName": "ALGO_001",
+        "AlgorithmVersion": "1.0.0",
+        "DecisionReason": "Order acknowledged by venue"
+      },
+      "PolicyIdentification": {
+        "Version": "1.1",
+        "PolicyID": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+        "ConformanceTier": "SILVER",
+        "RegistrationPolicy": {
+          "Issuer": "VeritasChain PoC Issuer",
+          "PolicyURI": "https://veritaschain.org/policies/fix-sidecar-poc-v1",
+          "EffectiveDate": 1736150400000000
+        },
+        "VerificationDepth": {
+          "HashChainValidation": true,
+          "MerkleProofRequired": true,
+          "ExternalAnchorRequired": true
+        }
+      }
+    },
+    {
+      "Header": {
+        "Version": "1.1",
+        "EventID": "019b91a8-9d6a-7083-e27c-3b92b292acae",
+        "EventType": "MOD",
+        "TimestampISO": "2025-01-06T14:25:00.000Z",
+        "TimestampInt": 1736173500000000,
+        "HashAlgo": "SHA256",
+        "SignAlgo": "ED25519",
+        "ClockSyncStatus": "BEST_EFFORT",
+        "TimestampPrecision": "MILLISECOND",
+        "PrevHash": "1e461acf8588a2084bea8a078d2b5bc8ec35f6351ca758fb9fb21c5417a93536",
+        "EventHash": "0cb1961ca9476d65704f24b5fad1d2006ae574a6db2367e26e576e8f211ba322"
+      },
+      "Trade": {
+        "Symbol": "XXXYYY",
+        "OrderID": "ORD-003",
+        "Side": "BUY",
+        "Volume": 15000.0,
+        "Price": 149.85,
+        "ClOrdID": "ORD-003-MOD",
+        "OrigClOrdID": "ORD-003"
+      },
+      "Governance": {
+        "AlgorithmName": "ALGO_001",
+        "AlgorithmVersion": "1.0.0",
+        "DecisionReason": "Price modification requested"
+      },
+      "PolicyIdentification": {
+        "Version": "1.1",
+        "PolicyID": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+        "ConformanceTier": "SILVER",
+        "RegistrationPolicy": {
+          "Issuer": "VeritasChain PoC Issuer",
+          "PolicyURI": "https://veritaschain.org/policies/fix-sidecar-poc-v1",
+          "EffectiveDate": 1736150400000000
+        },
+        "VerificationDepth": {
+          "HashChainValidation": true,
+          "MerkleProofRequired": true,
+          "ExternalAnchorRequired": true
+        }
+      }
+    },
+    {
+      "Header": {
+        "Version": "1.1",
+        "EventID": "019b91a8-9d6a-748d-16d8-13760a88e58a",
+        "EventType": "MOD",
+        "TimestampISO": "2025-01-06T14:25:00.123Z",
+        "TimestampInt": 1736173500123000,
+        "HashAlgo": "SHA256",
+        "SignAlgo": "ED25519",
+        "ClockSyncStatus": "BEST_EFFORT",
+        "TimestampPrecision": "MILLISECOND",
+        "PrevHash": "0cb1961ca9476d65704f24b5fad1d2006ae574a6db2367e26e576e8f211ba322",
+        "EventHash": "1241a0e0fcb65400919d0fa0dbc070d403ac66d6f61edc889a9f402c4c570109"
+      },
+      "Trade": {
+        "Symbol": "XXXYYY",
+        "OrderID": "BRK-003",
+        "Side": "BUY",
+        "ClOrdID": "ORD-003-MOD",
+        "ExecID": "EXE-006"
+      },
+      "Governance": {
+        "AlgorithmName": "ALGO_001",
+        "AlgorithmVersion": "1.0.0",
+        "DecisionReason": "Order modification accepted"
+      },
+      "PolicyIdentification": {
+        "Version": "1.1",
+        "PolicyID": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+        "ConformanceTier": "SILVER",
+        "RegistrationPolicy": {
+          "Issuer": "VeritasChain PoC Issuer",
+          "PolicyURI": "https://veritaschain.org/policies/fix-sidecar-poc-v1",
+          "EffectiveDate": 1736150400000000
+        },
+        "VerificationDepth": {
+          "HashChainValidation": true,
+          "MerkleProofRequired": true,
+          "ExternalAnchorRequired": true
+        }
+      }
+    },
+    {
+      "Header": {
+        "Version": "1.1",
+        "EventID": "019b91a8-9d6a-7d9c-3cd2-cb08aff29001",
+        "EventType": "EXE",
+        "TimestampISO": "2025-01-06T14:30:22.678Z",
+        "TimestampInt": 1736173822678000,
+        "HashAlgo": "SHA256",
+        "SignAlgo": "ED25519",
+        "ClockSyncStatus": "BEST_EFFORT",
+        "TimestampPrecision": "MILLISECOND",
+        "PrevHash": "1241a0e0fcb65400919d0fa0dbc070d403ac66d6f61edc889a9f402c4c570109",
+        "EventHash": "5a82f282a7bb3c8060be6e747cf51613c72b90d2680ba97b2bb7fa94e8f9fba1"
+      },
+      "Trade": {
+        "Symbol": "XXXYYY",
+        "OrderID": "BRK-003",
+        "Side": "BUY",
+        "Volume": 15000.0,
+        "Price": 149.855,
+        "Commission": 0.75,
+        "ClOrdID": "ORD-003-MOD",
+        "ExecID": "EXE-007"
+      },
+      "Governance": {
+        "AlgorithmName": "ALGO_001",
+        "AlgorithmVersion": "1.0.0",
+        "DecisionReason": "Order fully executed"
+      },
+      "PolicyIdentification": {
+        "Version": "1.1",
+        "PolicyID": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+        "ConformanceTier": "SILVER",
+        "RegistrationPolicy": {
+          "Issuer": "VeritasChain PoC Issuer",
+          "PolicyURI": "https://veritaschain.org/policies/fix-sidecar-poc-v1",
+          "EffectiveDate": 1736150400000000
+        },
+        "VerificationDepth": {
+          "HashChainValidation": true,
+          "MerkleProofRequired": true,
+          "ExternalAnchorRequired": true
+        }
+      }
+    },
+    {
+      "Header": {
+        "Version": "1.1",
+        "EventID": "019b91a8-9d6a-7781-6f91-b8e110308ae9",
+        "EventType": "SIG",
+        "TimestampISO": "2025-01-06T16:44:55.000Z",
+        "TimestampInt": 1736181895000000,
+        "HashAlgo": "SHA256",
+        "SignAlgo": "ED25519",
+        "ClockSyncStatus": "BEST_EFFORT",
+        "TimestampPrecision": "MILLISECOND",
+        "PrevHash": "5a82f282a7bb3c8060be6e747cf51613c72b90d2680ba97b2bb7fa94e8f9fba1",
+        "EventHash": "1ec78d9b926e8d2945dd3d36b1b8c7ab717697ea8d6d6bc1f5427ac1cd30fc4b"
+      },
+      "Trade": {
+        "Symbol": "XXXYYY",
+        "Side": "BUY",
+        "Price": 149.48
+      },
+      "Governance": {
+        "AlgorithmName": "ALGO_001",
+        "AlgorithmVersion": "1.0.0",
+        "Confidence": 0.65,
+        "DecisionReason": "High volume detected"
+      },
+      "PolicyIdentification": {
+        "Version": "1.1",
+        "PolicyID": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+        "ConformanceTier": "SILVER",
+        "RegistrationPolicy": {
+          "Issuer": "VeritasChain PoC Issuer",
+          "PolicyURI": "https://veritaschain.org/policies/fix-sidecar-poc-v1",
+          "EffectiveDate": 1736150400000000
+        },
+        "VerificationDepth": {
+          "HashChainValidation": true,
+          "MerkleProofRequired": true,
+          "ExternalAnchorRequired": true
+        }
+      }
+    },
+    {
+      "Header": {
+        "Version": "1.1",
+        "EventID": "019b91a8-9d6a-73b4-69f6-862e981c0d1c",
+        "EventType": "ORD",
+        "TimestampISO": "2025-01-06T16:45:00.000Z",
+        "TimestampInt": 1736181900000000,
+        "HashAlgo": "SHA256",
+        "SignAlgo": "ED25519",
+        "ClockSyncStatus": "BEST_EFFORT",
+        "TimestampPrecision": "MILLISECOND",
+        "PrevHash": "1ec78d9b926e8d2945dd3d36b1b8c7ab717697ea8d6d6bc1f5427ac1cd30fc4b",
+        "EventHash": "4f99028d7f6bbfe4ebc60f3de2cb19d4a4f95dfab0d1327dcd16011360f0c6d2"
+      },
+      "Trade": {
+        "Symbol": "XXXYYY",
+        "Side": "BUY",
+        "Volume": 100000.0,
+        "Price": 149.5,
+        "ClOrdID": "ORD-004"
+      },
+      "Governance": {
+        "AlgorithmName": "ALGO_001",
+        "AlgorithmVersion": "1.0.0",
+        "DecisionReason": "Order submitted via FIX"
+      },
+      "PolicyIdentification": {
+        "Version": "1.1",
+        "PolicyID": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+        "ConformanceTier": "SILVER",
+        "RegistrationPolicy": {
+          "Issuer": "VeritasChain PoC Issuer",
+          "PolicyURI": "https://veritaschain.org/policies/fix-sidecar-poc-v1",
+          "EffectiveDate": 1736150400000000
+        },
+        "VerificationDepth": {
+          "HashChainValidation": true,
+          "MerkleProofRequired": true,
+          "ExternalAnchorRequired": true
+        }
+      }
+    },
+    {
+      "Header": {
+        "Version": "1.1",
+        "EventID": "019b91a8-9d6a-75a5-800e-293a18ac4d8c",
+        "EventType": "REJ",
+        "TimestampISO": "2025-01-06T16:45:00.123Z",
+        "TimestampInt": 1736181900123000,
+        "HashAlgo": "SHA256",
+        "SignAlgo": "ED25519",
+        "ClockSyncStatus": "BEST_EFFORT",
+        "TimestampPrecision": "MILLISECOND",
+        "PrevHash": "4f99028d7f6bbfe4ebc60f3de2cb19d4a4f95dfab0d1327dcd16011360f0c6d2",
+        "EventHash": "711a67397865fc224e57ac7b8d8b7f94f8aa66e4c3fc7794cd2bfe74bcec6e21"
+      },
+      "Trade": {
+        "Symbol": "XXXYYY",
+        "OrderID": "BRK-004",
+        "Side": "BUY",
+        "ClOrdID": "ORD-004",
+        "ExecID": "EXE-008"
+      },
+      "Governance": {
+        "AlgorithmName": "ALGO_001",
+        "AlgorithmVersion": "1.0.0",
+        "DecisionReason": "Order rejected by venue"
+      },
+      "Error": {
+        "ErrorCode": "INSUFFICIENT_MARGIN",
+        "ErrorMessage": "Insufficient margin for order size",
+        "Severity": "WARNING",
+        "AffectedComponent": "broker-gateway"
+      },
+      "PolicyIdentification": {
+        "Version": "1.1",
+        "PolicyID": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+        "ConformanceTier": "SILVER",
+        "RegistrationPolicy": {
+          "Issuer": "VeritasChain PoC Issuer",
+          "PolicyURI": "https://veritaschain.org/policies/fix-sidecar-poc-v1",
+          "EffectiveDate": 1736150400000000
+        },
+        "VerificationDepth": {
+          "HashChainValidation": true,
+          "MerkleProofRequired": true,
+          "ExternalAnchorRequired": true
+        }
+      }
+    },
+    {
+      "Header": {
+        "Version": "1.1",
+        "EventID": "019b91a8-9d6a-708a-3f20-9b802a99d9ec",
+        "EventType": "SIG",
+        "TimestampISO": "2025-01-06T17:59:50.000Z",
+        "TimestampInt": 1736186390000000,
+        "HashAlgo": "SHA256",
+        "SignAlgo": "ED25519",
+        "ClockSyncStatus": "BEST_EFFORT",
+        "TimestampPrecision": "MILLISECOND",
+        "PrevHash": "711a67397865fc224e57ac7b8d8b7f94f8aa66e4c3fc7794cd2bfe74bcec6e21",
+        "EventHash": "37c3aca5ba2d102186132a4f1b0e96a507124f09393a3ddfb618445710acb8b7"
+      },
+      "Trade": {
+        "Symbol": "XXXYYY",
+        "Side": "SELL",
+        "Price": 149.19
+      },
+      "Governance": {
+        "AlgorithmName": "ALGO_001",
+        "AlgorithmVersion": "1.0.0",
+        "Confidence": 0.72,
+        "DecisionReason": "Reversal pattern"
+      },
+      "PolicyIdentification": {
+        "Version": "1.1",
+        "PolicyID": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+        "ConformanceTier": "SILVER",
+        "RegistrationPolicy": {
+          "Issuer": "VeritasChain PoC Issuer",
+          "PolicyURI": "https://veritaschain.org/policies/fix-sidecar-poc-v1",
+          "EffectiveDate": 1736150400000000
+        },
+        "VerificationDepth": {
+          "HashChainValidation": true,
+          "MerkleProofRequired": true,
+          "ExternalAnchorRequired": true
+        }
+      }
+    },
+    {
+      "Header": {
+        "Version": "1.1",
+        "EventID": "019b91a8-9d6a-7d9b-4c9a-9694a4542dba",
+        "EventType": "ORD",
+        "TimestampISO": "2025-01-06T18:00:00.000Z",
+        "TimestampInt": 1736186400000000,
+        "HashAlgo": "SHA256",
+        "SignAlgo": "ED25519",
+        "ClockSyncStatus": "BEST_EFFORT",
+        "TimestampPrecision": "MILLISECOND",
+        "PrevHash": "37c3aca5ba2d102186132a4f1b0e96a507124f09393a3ddfb618445710acb8b7",
+        "EventHash": "5c63946a6b2a78ef5748352202db92d8d75e3e4c3fad35e98f89f035c4b8a553"
+      },
+      "Trade": {
+        "Symbol": "XXXYYY",
+        "Side": "SELL",
+        "Volume": 50000.0,
+        "Price": 149.2,
+        "ClOrdID": "ORD-005"
+      },
+      "Governance": {
+        "AlgorithmName": "ALGO_001",
+        "AlgorithmVersion": "1.0.0",
+        "DecisionReason": "Order submitted via FIX"
+      },
+      "PolicyIdentification": {
+        "Version": "1.1",
+        "PolicyID": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+        "ConformanceTier": "SILVER",
+        "RegistrationPolicy": {
+          "Issuer": "VeritasChain PoC Issuer",
+          "PolicyURI": "https://veritaschain.org/policies/fix-sidecar-poc-v1",
+          "EffectiveDate": 1736150400000000
+        },
+        "VerificationDepth": {
+          "HashChainValidation": true,
+          "MerkleProofRequired": true,
+          "ExternalAnchorRequired": true
+        }
+      }
+    },
+    {
+      "Header": {
+        "Version": "1.1",
+        "EventID": "019b91a8-9d6a-7281-e254-1698431d3ece",
+        "EventType": "ACK",
+        "TimestampISO": "2025-01-06T18:00:00.100Z",
+        "TimestampInt": 1736186400100000,
+        "HashAlgo": "SHA256",
+        "SignAlgo": "ED25519",
+        "ClockSyncStatus": "BEST_EFFORT",
+        "TimestampPrecision": "MILLISECOND",
+        "PrevHash": "5c63946a6b2a78ef5748352202db92d8d75e3e4c3fad35e98f89f035c4b8a553",
+        "EventHash": "61eb2b73cfe088d93f85dce972ea989311e7d6053cf1abc6f6926eb08860d419"
+      },
+      "Trade": {
+        "Symbol": "XXXYYY",
+        "OrderID": "BRK-005",
+        "Side": "SELL",
+        "ClOrdID": "ORD-005",
+        "ExecID": "EXE-009"
+      },
+      "Governance": {
+        "AlgorithmName": "ALGO_001",
+        "AlgorithmVersion": "1.0.0",
+        "DecisionReason": "Order acknowledged by venue"
+      },
+      "PolicyIdentification": {
+        "Version": "1.1",
+        "PolicyID": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+        "ConformanceTier": "SILVER",
+        "RegistrationPolicy": {
+          "Issuer": "VeritasChain PoC Issuer",
+          "PolicyURI": "https://veritaschain.org/policies/fix-sidecar-poc-v1",
+          "EffectiveDate": 1736150400000000
+        },
+        "VerificationDepth": {
+          "HashChainValidation": true,
+          "MerkleProofRequired": true,
+          "ExternalAnchorRequired": true
+        }
+      }
+    },
+    {
+      "Header": {
+        "Version": "1.1",
+        "EventID": "019b91a8-9d6a-7997-a1a1-8805caa5b68e",
+        "EventType": "PRT",
+        "TimestampISO": "2025-01-06T18:00:05.500Z",
+        "TimestampInt": 1736186405500000,
+        "HashAlgo": "SHA256",
+        "SignAlgo": "ED25519",
+        "ClockSyncStatus": "BEST_EFFORT",
+        "TimestampPrecision": "MILLISECOND",
+        "PrevHash": "61eb2b73cfe088d93f85dce972ea989311e7d6053cf1abc6f6926eb08860d419",
+        "EventHash": "d8f0e7553584267b836fc62e4f5547766ad0b4422a65a3fadbeee3118381d992"
+      },
+      "Trade": {
+        "Symbol": "XXXYYY",
+        "OrderID": "BRK-005",
+        "Side": "SELL",
+        "Volume": 20000.0,
+        "Price": 149.198,
+        "ClOrdID": "ORD-005",
+        "ExecID": "EXE-010"
+      },
+      "Governance": {
+        "AlgorithmName": "ALGO_001",
+        "AlgorithmVersion": "1.0.0",
+        "DecisionReason": "Partial fill received"
+      },
+      "PolicyIdentification": {
+        "Version": "1.1",
+        "PolicyID": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+        "ConformanceTier": "SILVER",
+        "RegistrationPolicy": {
+          "Issuer": "VeritasChain PoC Issuer",
+          "PolicyURI": "https://veritaschain.org/policies/fix-sidecar-poc-v1",
+          "EffectiveDate": 1736150400000000
+        },
+        "VerificationDepth": {
+          "HashChainValidation": true,
+          "MerkleProofRequired": true,
+          "ExternalAnchorRequired": true
+        }
+      }
+    },
+    {
+      "Header": {
+        "Version": "1.1",
+        "EventID": "019b91a8-9d6a-73b1-401f-6128463f2a2e",
+        "EventType": "CXL",
+        "TimestampISO": "2025-01-06T18:05:00.000Z",
+        "TimestampInt": 1736186700000000,
+        "HashAlgo": "SHA256",
+        "SignAlgo": "ED25519",
+        "ClockSyncStatus": "BEST_EFFORT",
+        "TimestampPrecision": "MILLISECOND",
+        "PrevHash": "d8f0e7553584267b836fc62e4f5547766ad0b4422a65a3fadbeee3118381d992",
+        "EventHash": "1d65659f645e3e187c3466ccf2614af1620fe7ae87c056ff77ff14390f2d5a9a"
+      },
+      "Trade": {
+        "Symbol": "XXXYYY",
+        "OrderID": "ORD-005",
+        "Side": "SELL",
+        "ClOrdID": "ORD-005-CXL"
+      },
+      "Governance": {
+        "AlgorithmName": "ALGO_001",
+        "AlgorithmVersion": "1.0.0",
+        "DecisionReason": "Cancel request submitted"
+      },
+      "PolicyIdentification": {
+        "Version": "1.1",
+        "PolicyID": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+        "ConformanceTier": "SILVER",
+        "RegistrationPolicy": {
+          "Issuer": "VeritasChain PoC Issuer",
+          "PolicyURI": "https://veritaschain.org/policies/fix-sidecar-poc-v1",
+          "EffectiveDate": 1736150400000000
+        },
+        "VerificationDepth": {
+          "HashChainValidation": true,
+          "MerkleProofRequired": true,
+          "ExternalAnchorRequired": true
+        }
+      }
+    },
+    {
+      "Header": {
+        "Version": "1.1",
+        "EventID": "019b91a8-9d6a-7eb4-f691-a3e971ae5be0",
+        "EventType": "CXL",
+        "TimestampISO": "2025-01-06T18:05:00.200Z",
+        "TimestampInt": 1736186700200000,
+        "HashAlgo": "SHA256",
+        "SignAlgo": "ED25519",
+        "ClockSyncStatus": "BEST_EFFORT",
+        "TimestampPrecision": "MILLISECOND",
+        "PrevHash": "1d65659f645e3e187c3466ccf2614af1620fe7ae87c056ff77ff14390f2d5a9a",
+        "EventHash": "0845c6fc379decb4408832ae3fcc232b8a8cdfca36a581819f7ae38bfb9ebb47"
+      },
+      "Trade": {
+        "Symbol": "XXXYYY",
+        "OrderID": "BRK-005",
+        "Side": "SELL",
+        "ClOrdID": "ORD-005-CXL",
+        "ExecID": "EXE-011"
+      },
+      "Governance": {
+        "AlgorithmName": "ALGO_001",
+        "AlgorithmVersion": "1.0.0",
+        "DecisionReason": "Order canceled"
+      },
+      "PolicyIdentification": {
+        "Version": "1.1",
+        "PolicyID": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+        "ConformanceTier": "SILVER",
+        "RegistrationPolicy": {
+          "Issuer": "VeritasChain PoC Issuer",
+          "PolicyURI": "https://veritaschain.org/policies/fix-sidecar-poc-v1",
+          "EffectiveDate": 1736150400000000
+        },
+        "VerificationDepth": {
+          "HashChainValidation": true,
+          "MerkleProofRequired": true,
+          "ExternalAnchorRequired": true
+        }
+      }
+    },
+    {
+      "Header": {
+        "Version": "1.1",
+        "EventID": "019b91a8-9d6a-7398-062e-df3c5615c73e",
+        "EventType": "INIT",
+        "TimestampISO": "2025-01-06T18:30:00.000Z",
+        "TimestampInt": 1736188200000000,
+        "HashAlgo": "SHA256",
+        "SignAlgo": "ED25519",
+        "ClockSyncStatus": "BEST_EFFORT",
+        "TimestampPrecision": "MILLISECOND",
+        "PrevHash": "0845c6fc379decb4408832ae3fcc232b8a8cdfca36a581819f7ae38bfb9ebb47",
+        "EventHash": "8fb9a8d748b7987c17cb0c57d315422677e092382e15b1f8e11128c89ec393ca"
+      },
+      "Governance": {
+        "AlgorithmName": "ALGO_001",
+        "AlgorithmVersion": "1.0.0",
+        "DecisionReason": "Trading session closed - End of day"
+      },
+      "PolicyIdentification": {
+        "Version": "1.1",
+        "PolicyID": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+        "ConformanceTier": "SILVER",
+        "RegistrationPolicy": {
+          "Issuer": "VeritasChain PoC Issuer",
+          "PolicyURI": "https://veritaschain.org/policies/fix-sidecar-poc-v1",
+          "EffectiveDate": 1736150400000000
+        },
+        "VerificationDepth": {
+          "HashChainValidation": true,
+          "MerkleProofRequired": true,
+          "ExternalAnchorRequired": true
+        }
+      }
+    },
+    {
+      "Header": {
+        "Version": "1.1",
+        "EventID": "019b91a8-9d6a-7ea1-41b9-b274cbc50c46",
+        "EventType": "VCP_BATCH",
+        "TimestampISO": "2025-01-06T18:30:01.000Z",
+        "TimestampInt": 1736188201000000,
+        "HashAlgo": "SHA256",
+        "SignAlgo": "ED25519",
+        "ClockSyncStatus": "BEST_EFFORT",
+        "TimestampPrecision": "MILLISECOND",
+        "PrevHash": "8fb9a8d748b7987c17cb0c57d315422677e092382e15b1f8e11128c89ec393ca",
+        "EventHash": "b71baed3da278a1c727046fc300b8fc37c93685268836468cf724579efdcf84e"
+      },
+      "Governance": {
+        "AlgorithmName": "ALGO_001",
+        "AlgorithmVersion": "1.0.0",
+        "DecisionReason": "End of day batch - All FIX events included",
+        "BatchID": "batch_20250106_001",
+        "MerkleRoot": "a37e4204f962a7b65070807cdf9b8892a031831b0bef3ec7c51f7aa20c2ecb4e",
+        "EventCount": 25
+      },
+      "PolicyIdentification": {
+        "Version": "1.1",
+        "PolicyID": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+        "ConformanceTier": "SILVER",
+        "RegistrationPolicy": {
+          "Issuer": "VeritasChain PoC Issuer",
+          "PolicyURI": "https://veritaschain.org/policies/fix-sidecar-poc-v1",
+          "EffectiveDate": 1736150400000000
+        },
+        "VerificationDepth": {
+          "HashChainValidation": true,
+          "MerkleProofRequired": true,
+          "ExternalAnchorRequired": true
+        }
+      }
+    },
+    {
+      "Header": {
+        "Version": "1.1",
+        "EventID": "019b91a8-9d6a-7c80-03ec-0e32d9a41e95",
+        "EventType": "VCP_ANCHOR",
+        "TimestampISO": "2025-01-06T18:30:02.000Z",
+        "TimestampInt": 1736188202000000,
+        "HashAlgo": "SHA256",
+        "SignAlgo": "ED25519",
+        "ClockSyncStatus": "BEST_EFFORT",
+        "TimestampPrecision": "MILLISECOND",
+        "PrevHash": "b71baed3da278a1c727046fc300b8fc37c93685268836468cf724579efdcf84e",
+        "EventHash": "3b8e5d7f0e1567f2cef97688373f1cc5721c02325ccc625b6df9cd7f63931b1d"
+      },
+      "Governance": {
+        "AlgorithmName": "ALGO_001",
+        "AlgorithmVersion": "1.0.0",
+        "DecisionReason": "24-hour periodic anchoring - Silver Tier compliance (v1.1 Section 2.1)",
+        "MerkleRoot": "a37e4204f962a7b65070807cdf9b8892a031831b0bef3ec7c51f7aa20c2ecb4e",
+        "EventCount": 25,
+        "AnchorID": "anchor_20250106_001",
+        "AnchorTarget": "LOCAL_FILE",
+        "AnchorFrequency": "24h"
+      },
+      "PolicyIdentification": {
+        "Version": "1.1",
+        "PolicyID": "org.veritaschain:vcp-fix-sidecar-poc-v1",
+        "ConformanceTier": "SILVER",
+        "RegistrationPolicy": {
+          "Issuer": "VeritasChain PoC Issuer",
+          "PolicyURI": "https://veritaschain.org/policies/fix-sidecar-poc-v1",
+          "EffectiveDate": 1736150400000000
+        },
+        "VerificationDepth": {
+          "HashChainValidation": true,
+          "MerkleProofRequired": true,
+          "ExternalAnchorRequired": true
+        }
+      }
+    }
+  ]
+}

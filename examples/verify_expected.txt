@@ -1,0 +1,88 @@
+======================================================================
+VCP Evidence Pack Verification Report
+VCP v1.1 Full Compliance Edition
+======================================================================
+Evidence Path: /home/claude/vcp-fix-rta-reference/evidence/poc_pack_v1_1
+Verification Time: 2026-01-06T05:55:37.227298+00:00
+
+Specification: VCP v1.1
+Generator: VCP.FIX.Sidecar.PoC.v1.1
+Conformance Tier: SILVER
+PolicyID: org.veritaschain:vcp-fix-sidecar-poc-v1
+Total Events: 27
+Total Batches: 1
+Total Anchors: 1
+Protocol: FIX 4.4
+
+VCP v1.1 Compliance Verification:
+
+  ✓ Specification declared: VCP v1.1
+  ✓ Global PolicyIdentification present
+    ✓ PolicyID: org.veritaschain:vcp-fix-sidecar-poc-v1
+    ✓ ConformanceTier: SILVER
+    ✓ RegistrationPolicy.Issuer: VeritasChain PoC Issuer
+    ✓ VerificationDepth present:
+      - HashChainValidation: True
+      - MerkleProofRequired: True
+      - ExternalAnchorRequired: True
+
+  Event-level PolicyIdentification:
+    ✓ All 27 events have PolicyIdentification
+
+  Three-Layer Architecture (Section 6):
+    ✓ Layer 1: EventHash (REQUIRED) + PrevHash (OPTIONAL, included)
+    ✓ Layer 2: Merkle Tree RFC 6962 (REQUIRED)
+    ✓ Layer 3: External Anchor (REQUIRED)
+
+  ✓ External Anchor present (1 anchor event(s))
+    - AnchorID: anchor_20250106_001
+    - AnchorTarget: LOCAL_FILE
+    - AnchorFrequency: 24h
+
+VCP v1.1 Compliance Check: ✓ FULLY COMPLIANT
+
+----------------------------------------------------------------------
+
+Layer 1 - Event Hash Verification (SHA-256):
+  ✓ All 27 event hashes cryptographically verified
+
+Layer 1 - Hash Chain Verification (OPTIONAL in v1.1):
+  ✓ Hash chain present and verified (enhanced integrity)
+
+Layer 2 - Merkle Root Verification (RFC 6962):
+  ✓ Merkle root verified: a37e4204f962a7b65070807cdf9b8892...
+    Tree rebuilt from 25 event hashes
+
+Layer 2 - Merkle Inclusion Proof Verification:
+  ✓ Event 019b91a8-9d69-77b6... inclusion verified
+
+Layer 3 - External Anchor Verification:
+  ✓ Anchor anchor_20250106_001 verified
+    Target: LOCAL_FILE
+
+Timeline Verification:
+  ✓ Timeline chronology verified
+
+Event Type Distribution:
+  ACK: 4
+  CXL: 2
+  EXE: 3
+  INIT: 2
+  MOD: 2
+  ORD: 5
+  PRT: 1
+  REJ: 1
+  SIG: 5
+  VCP_ANCHOR: 1
+  VCP_BATCH: 1
+
+======================================================================
+Overall: ✓ CRYPTOGRAPHICALLY VERIFIED
+
+This evidence pack is fully compliant with VCP Specification v1.1:
+  - Section 5.5: PolicyIdentification ✓
+  - Section 6: Three-Layer Architecture ✓
+  - Section 2.1: External Anchor REQUIRED ✓
+
+All hashes, proofs, and anchors have been independently verified.
+======================================================================
